@@ -16,6 +16,10 @@
 <li>more about my interests <a href="likes">here</a></li>
 </ul>
 
+<div class="songtainer">
+<iframe class="song" style="border: 0; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/size=small/bgcol=333333/linkcol=ffffff/track=3648935324/transparent=true/" seamless="" data-ruffle-polyfilled=""></iframe>
+</div> 
+
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
 
@@ -94,6 +98,24 @@ margin-bottom: 0px;
     width: 0;
 }
   .ytp-hide-controls:not(.ytp-mweb-player) .ytp-watermark {visibility: hidden;}
+
+.songtainer{
+width: 360px;
+height: 42px;
+overflow: hidden;
+margin: 20px 0 0 20px;
+padding: 0;
+}
+.song {
+position: relative;
+bottom: 10px;
+filter: grayscale(1);    
+display: block;
+margin: 0;
+width: 470px;
+border: none;
+outline: none;
+}
 </style>
 </body>
 </html>
