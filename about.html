@@ -16,9 +16,16 @@
 <li>more about my interests <a href="likes">here</a></li>
 </ul>
 
-<div class="songtainer">
-<iframe class="song" style="border: 0; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/size=small/bgcol=333333/linkcol=ffffff/track=3648935324/transparent=true/" seamless="" data-ruffle-polyfilled=""></iframe>
-</div> 
+<H4>here are some songs i like ....judge my music taste</H4>
+<br>
+<div class="music">
+<iframe class="song1" src="https://bandcamp.com/EmbeddedPlayer/track=1147671508/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/artwork=large/transparent=true/"></iframe>
+<iframe class="song1" src="https://bandcamp.com/EmbeddedPlayer/track=4206978192/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/artwork=large/transparent=true/"></iframe>
+<iframe class="song1" src="https://bandcamp.com/EmbeddedPlayer/track=1220731221/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/artwork=large/transparent=true/"></iframe>
+<iframe class="song1" src="https://bandcamp.com/EmbeddedPlayer/track=4137159150/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/artwork=large/transparent=true/"></iframe>
+<iframe class="song1" src="https://bandcamp.com/EmbeddedPlayer/track=2502843563/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/artwork=large/transparent=true/"></iframe>
+<iframe class="song1" src="https://bandcamp.com/EmbeddedPlayer/track=3434289083/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/artwork=large/transparent=true/"></iframe>
+</div>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
@@ -87,6 +94,8 @@ list-style-image:url(https://pix.crd.co/assets/images/gallery21/f6021301_origina
 
 iframe{
 filter: grayscale(2);
+border: 0px black solid;
+outline: black solid 0px;
 }
 
 hr{
@@ -99,20 +108,21 @@ margin-bottom: 0px;
 }
   .ytp-hide-controls:not(.ytp-mweb-player) .ytp-watermark {visibility: hidden;}
 
-.songtainer{
-width: 360px;
-height: 42px;
-overflow: hidden;
-margin: 20px 0 0 20px;
-padding: 0;
+.music{
+width: 500px;
+height: max-content;
 }
-.song {
+
+.song1 {
 position: relative;
-bottom: 10px;
+scale: .85;
+margin: 10px -30px -25px 18px;
 filter: grayscale(1);    
-display: block;
-margin: 0;
-width: 470px;
+height: 170px;
+width: 170px;
+transform-origin: top left;
+padding-top: 0;
+background: white;
 border: none;
 outline: none;
 }
