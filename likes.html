@@ -1,48 +1,47 @@
-
 <html style="overflow-x: hidden;">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=.85">
     <title>PKPC99</title>
     <link rel="icon" href="https://pixels.crd.co/assets/images/gallery14/680355e0.gif">
   </head>
+
   <body>
 <div class="img"></div>
 <h1>interests</h1>
 <b>bold</b> = big fan right now
-<h2>media</h2>
-<ul>
- <li><b>blue archive</b></li>
-<li>itemlabel</li>
-<li>lego monkie kid</li>
-<li>monkey ball</li>
-<li><b>muse dash</b></li>
-<li><b>pizza tower</b></li>
-<li>princess connect</li>
-<li><b>ribbit king</b></li>
-<li><b>roblox</b></li>
-<li><b>sonic</b></li>
-<li>splatoon</li>
-<li><b>sugary spire</b></li>
-<li>super milk-chan</li>
-<li>wario</li>
-  <br>
-</ul>
 
+<table>
+<h2>media </h2>
+<!- I know this [h2 in table] is a bad practice    ->
+<!- but it works for what i want to do right now!!!->
+<tbody>
+<tr> <td><b>blue archive</b></td>   <td><b>sonic</b></td> </tr>
+<tr> <td><b>muse dash</b></td>   <td>monkie kid</td> </tr>
+<tr> <td>monkey ball</td>   <td><b>pizza tower</b></td> </tr>
+<tr> <td><b>ribbit king</b></td>   <td><b>sugary spire</b></td> </tr>
+<tr> <td>priconne</td>   <td>splatoon</td> </tr>
+<tr> <td>warioware &<br>warioland</td>   <td>super<br>milk-chan</td> </tr>
+</tbody>
+</table>
+
+
+<table style="overflow:hidden;">
 <h2>hobbies</h2>
-<ul>
- <li>drawing</li>
- <li>writing short stories</li>
- <li>writing amateur code</li>
- <li>reading</li>
- <li>gaming (poorly)</li>
-<li>cooking (occassionally)</li>
-<li>designing profiles on everskies</li>
+<tbody>
+<tr> <td>drawing</td>   <td>gaming</td> </tr>
+<tr> <td>writing</td>   <td>reading</td> </tr>
+<tr> <td>cooking</td>   <td>web design</td> </tr>
+<tr> <td>web dev</td>   <td>avatar dress-up</td> </tr>
 
-</ul>
+</tbody>
+</table>
+<br>
 
-<ul>
-<li><i><a href="https://pkpc99.github.io">homepage</a></i></li>
-</ul>
+
+<a class="redir" href="https://pkpc99.github.io">← homepage</a>
+</body>
+
+
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Shippori Antique B1&display=swap');
@@ -56,27 +55,22 @@ background: #ffff99 url(https://i.ibb.co/0QbwRJx/yello043.jpg) repeat;
 background-attachment: fixed;
 }
 
-h1{
-color: #ffca7f;
+h1,h2{
+font-family: Shippori Antique B1;
+margin: 0;
 transform-origin: top left;
 transform: scaleX(130%);
 letter-spacing: -1px;
-font-weight: 900;
+color: #ffca7f;
+}
+
+h1{
 font-size: 60px;
-margin-top: 0;
-margin-bottom: -10px;
+margin-bottom: -15px;
 }
 
 h2 {
-text-indent: 3px;
-color: #ffca7f;
-font-family: Shippori Antique B1;
-transform-origin: top left;
-transform: scaleX(130%);
-letter-spacing: -1px;
 font-size: 40px;
-margin-top: 0;
-margin-bottom: -10px;
 }
 
 .img{
@@ -92,33 +86,75 @@ background-attachment: fixed;
 z-index: -3;
 }
 
-li {
-font-size: 30px;
-list-style-image : url(https://iili.io/Jr6gqkN.gif);
-text-decoration: none;
-color: #b6917f;
-}
-
-li small{
-font-size: 20px;
-color: #666;
-
-}
-
-li a{
+.redir {
+padding:0;
+font-size: 25px;
 text-decoration: none;
 color: #f6b455;
 font-weight: 700;
+font-style: italic;
+}
+
+small{
+font-size: 13px;
 }
 
 li:nth-child(even) {
-list-style-image:url(https://xyz.crd.co/assets/images/gallery05/117eeeb7.gif);
+list-style-image:url(https://xyz.crd.co/assets/images/gallery05/117eeeb7.gif?v=4ca63763);
 }
 
 li:nth-child(3n) {
-list-style-image:url(https://iili.io/JrPgfHl.gif);
+list-style-image:url(https://pix.crd.co/assets/images/gallery07/26042e27.gif?v=ca70c28c);
+}
+
+
+
+table{
+box-sizing: border-box;
+overflow: scroll;
+display: block;
+height:135px;
+width: max-content;
+max-width: 90%;
+background: #fefefe;
+border: 5px dashed #ffca7f;
+padding: 5px;
+margin-bottom: 15px;
+border-radius: 15px;
+line-height: 17px;
+}
+
+td {
+position: relative;
+font-size: 21px;
+background:rgba(239, 25, 250, 0);
+padding: 5px 0px 0px 15px;
+}
+
+td:nth-child(2n){
+padding-left: 20px;
+}
+
+td::before{
+content: "█";
+background: url("https://barok.crd.co/assets/images/gallery02/d71cc580.gif") center no-repeat;
+filter: sepia(30%);
+color: transparent;
+background-size: 85%;
+margin: auto 5px auto -5px;
+vertical-align: middle;
+}
+
+table::-webkit-scrollbar {
+height: 10px;
+width: 10px;
+}
+
+table::-webkit-scrollbar-thumb {
+border-radius: 5.8em;
+background-color: #ffca7f;
+background-image:linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
 }
 
 </style>
-  </body>
 </html>
